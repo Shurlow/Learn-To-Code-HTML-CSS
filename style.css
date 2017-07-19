@@ -1,0 +1,70 @@
+/*Custom Colors: https://coolors.co/50514f-f25f5c-ffe066-247ba0-70c1b3
+
+darkgrey: #50514F
+lightgrey: #BDBFBB
+red: #F25F5C
+blue: #247BA0
+yellow: #FFE066
+green: #70C1B3
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: sans-serif;*/
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+img {
+  max-height: 300px;
+}
+
+.nav {
+  background: #50514F;
+  padding-left: 100px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+a:hover {
+  background: #5F605E;
+}
+
+.header {
+  padding: 50px;
+  padding-left: 100px;
+  min-height: 300px;
+}
+
+.section {
+  padding: 50px;
+  padding-left: 100px;
+  min-height: 300px;
+  color: white;
+}
+
+#s1 {
+  background: #247BA0;
+}
+
+#s2 {
+  background: #F25F5C;
+}
+
+#s3 {
+  background: #FFE066;
+}
