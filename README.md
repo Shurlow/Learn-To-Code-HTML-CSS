@@ -1,6 +1,8 @@
 # Learn to Code HTML & CSS
 Brought to you by Galvanize. Learn more about the way we teach code at [galvanize.com](http://galvanize.com).
 
+![](aboutgalvanize.jpg)
+
 ## Overview
 The goal of this brief course is to provide you with a fun introduction to the world of web development, starting with HTML and CSS.
 
@@ -34,7 +36,8 @@ Recipes to give to your computer to “cook” up some awesome things for you on
 4. IMPORTANT! Leave all the individual files in the downloaded folder (if you would like to move it out of the downloads folder move the entire folder, not individual items)
 5. From Atom: File > open, select the folder and then click "Open"
 6. From Atom: If the file tree does not appear on the left hand View > Toggle Tree View -- this will show you the entire folder within Atom (or `Cmd + \` on OSX )
-7. *Now if you already know some of what we're talking about,* you're all set to poke around in the files -- `index.html` and `style.css` are the two files we will using.
+7. Feel free to poke around in the files (`index.html` and `style.css` are the two files we will be using.)
+8. Open `index.html` in your browser. (In chrome select: "File" > "Open File..." > find the downloaded project folder and select `index.html` )
 
 Patience! Setting up your computer takes time and can be tricky, especially across platforms.
 
