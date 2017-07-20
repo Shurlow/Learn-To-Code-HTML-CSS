@@ -244,7 +244,7 @@ Welcome to the cool kids club.
 - 91% Job Placement Rate within six months
 - Average starting salary: $76,838 per annum
 - Scholarships available for those who qualify
-- Learn more at http://galvanize.com/courses/fullstack/
+- Learn more at https://www.galvanize.com/seattle/web-development
 
 #### Looking for something more flexible? Check out our Evening Workshops!
 
