@@ -43,19 +43,17 @@ Patience! Setting up your computer takes time and can be tricky, especially acro
 
 Once you're ready, you can move onto the next lesson.
 
-## H.T.M.L. - "the building blocks of the internet"
+## HTML - "the building blocks of the internet"
 
 Hyper Text Markup Language, or HTML, is the most elemental language of the internet. Everything you see within your web browser is an interpretation of HTML in some form of other, and it is essential to learn in all web development.
 
-###### The syntax of most HTML is as follows:
-* `<Tags>` - code that wraps around the content of HTML to designate a particular effect, sometimes inherent to the tag.
-* `Attributes=""` - code inserted into tags to implement a particular effect that is external to the tag.
-* Elements - the combined syntax of tags, attributes, and elements.
+###### HTML is made up of blocks called *elements*
+Each element has 3 pieces:
+* `Content` - the text you want visible on the page
+* `<Tag>` - code that wraps around the content of an element to designate a particular effect, sometimes inherent to the tag.
+* `Attributes="value"` - optional extra information about an element that is not displayed on the page.
 
-Syntax:
-```
-Element = <tag attribute=”blahblah”>content content</tag>
-```
+![](https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png)
 
 Example:
 
@@ -78,39 +76,52 @@ Almost everything in HTML needs to start and end with a tag. In between the open
 - `<a></a>` anchor, activates a link in the page
 - `<head></head>` contains meta information
 - `<body></body>` contains browser information
-- `<h1></h1>` notes an heading of the largest size
+- `<h1></h1>` notes a heading of the largest size
 - and many more... (https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 ###### Irregular Tags:
 - `<img />` creates an image in the page
 - `<br />` creates a line break in the page
 - `<hr />` creates a horizontal line
-- `<link />` connects this to related documents (usually stylesheets)
+- `<link />` connects html to related documents (usually stylesheets)
 - `<input />` creates an input field
 
 #### HTML Attributes:
 HTML attributes contain extra information about the element which you don't want to appear in the actual content.
 
-Attributes generally appear as name-value pairs:
+Attributes are generally defined as name-value pairs:
 
 ![](https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png)
 
-```
-<p class="foo">This is the content of an element with class 'foo'.</p>
-```
-
 more detailed info: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Attributes
+
 ###### The most common attributes are:
-- id="" - id is used on only a single element"
-- class="" - class can be used on multiple elements"
-- href=”” - hyperlink reference to an internal or external link
-- src=”” - source file to an image, video, etc.
-- style=”” - add some color, font, margins, etc.
+- `id=""` - used to identify an element (The same id can only be used once)
+- `class=""` - Sets the CSS class/s of an element. The same class can be used on multiple elements.
+- `href=""` - hyperlink reference to an internal or external link
+- `src=""` - source file to an image, video, etc.
+- `style=""` - add some color, font, margins, etc.
 - ^ *There’s a MUCH better way to do this via CSS - more on that later!*
 
-How do we check elements for whether they're talking to the browser? Use the **inspect element** feature!
+How do we check whether elements are showing up in the browser? Use the **inspect element** feature!
 
-But... how do we make HTML... better?
+## LET'S CODE!
+
+###### Remember:
+- Coding can be hard - be patient!
+- Work in pairs! Even the pros do it
+- Ask for help - we’re in a school!
+
+#### Let's get started!
+1. Open up your text editor
+2. Navigate to your repo
+3. Open up the following files
+- index.html
+- CSS/style.css
+
+### Challenge
+- Add an `<h1>` tag to your page with a unique title!
+- If you're feeling ambition try changing the `<title>` with a custom title all your own.
 
 ## Overview of CSS
 
@@ -121,12 +132,25 @@ What Does CSS Stand for?
 
 The internet used to be ugly. Enter CSS - a consolidated way to make it prettier.
 
-#### Three primary objects:
-- Elements: e.g. h1, div, body, a - default HTML (already reviewed)
-- IDs: everything that starts with a “#”
-- Classes: everything that starts with a “.”
+CSS looks like this:
 
-#### Syntax of CSS:
+![](http://blog.teamtreehouse.com/wp-content/uploads/2012/10/css-rule.jpg)
+
+The three main parts include:
+* `selector` - tells CSS which element to style using html tag, id or class.
+* `property` - which style property to change
+* `value` - the result value to use for the chosen property
+
+#### CSS Selectors:
+- Tag: effects all h1, div, body, a elements on the page
+	- `div {...}`
+- IDs: effects the element with corresponding ID
+	- `#myId {...}`
+- Classes: effects all elements with the specified class
+	- `.className {...}`
+
+Example CSS Code:
+
 ```
 h1 {  // this is either an element, class, or ID
 	font-size: 24px; // syntax is name: value;
@@ -134,39 +158,41 @@ h1 {  // this is either an element, class, or ID
 	color: #000000; // hexadecimal, RGB, etc.
 }
 ```
-Space doesn’t matter, but “onion” rules apply
 
 #### What are IDs?
 IDs are attributes that are used only on one element ONLY and noted with a “#” symbol in CSS
 e.g.
 ```
 HTML:
-<a id=”leesName”>Lee Ngo</a>
+<a id=”myId”>Scott Hurlow</a>
 
 CSS:
-#leesName {
-	color: white;
+#myId {
+	color: blue;
 }
 ```
-IDs are used to direct functions to unique elements in the HTML so that there’s no confusion
+IDs are also used to direct locate unique elements in the HTML so that there’s no confusion
 
 *e.g clicking to a specific part of page*
 
 #### What are Classes?
 
-Classes are attributes something to multiple elements on a page noted with a “.” symbol in CSS.
+Classes are attributes assigned to multiple elements on a page noted with a “.” symbol in CSS.
+
 ```
 HTML:
-<a class=”ninja”>Lee Ngo</a>
+<a class=”coolClass”>Scott Hurlow</a>
 
 CSS:
-.ninja {
-	color: black; margin: 10px;
+.coolClass {
+	color: black;
+	margin: 10px;
 }
 ```
+
 Classes are used to change or affect multiple items in an HTML document at once
 
-*e.g. everything with class=”ninja” should have the same attributes*
+*e.g. everything with class=coolClass should have the same attributes*
 
 In tandem, you can do a lot with HTML & CSS! Let's give it a shot!
 
@@ -183,6 +209,10 @@ In tandem, you can do a lot with HTML & CSS! Let's give it a shot!
 3. Open up the following files
 - index.html
 - CSS/style.css
+
+#### Challenge
+- Add color to the elements with class `section`
+- Get creative! Try adding CSS rules like: `color`, `background`, `font-size`
 
 #### Let's change the font!
 1. Navigate to Google Fonts: https://www.google.com/fonts
@@ -211,21 +241,13 @@ Welcome to the cool kids club.
 #### Want to code more? Check out Galvanize's Full Stack Immersive Program!
 
 - 24 Week Full-Time Program
-- 97% Job Placement Rate within six months
-- Average starting salary: $77,000 per annum
+- 91% Job Placement Rate within six months
+- Average starting salary: $76,838 per annum
 - Scholarships available for those who qualify
 - Learn more at http://galvanize.com/courses/fullstack/
 
 #### Looking for something more flexible? Check out our Evening Workshops!
 
-- Zero to Web Designer
+- Part-time Flex HTML/CSS
 - Foundations of JavaScript
 - Learn more at http://www.galvanize.com/workshops/
-
-#### About the Authors
-
-[Graham McBain](http://linkedin.com/in/grahammcbain) is a graduate of the 3rd cohort of the Galvanzie Full Stack Program and now Evangelist for Galvanize based in the Colorado area. Graham believes that programming is more accessible than people think and is passionate about showing people the path to becoming a developer.
-
-[Lee Ngo](http://linkedin.com/in/leengo) is an evangelist for Galvanize based in Seattle. Previously he worked for UP Global (now Techstars) and founded his own ed-tech company in Pittsburgh, PA. Lee believes in learning by doing, engaging and sharing, and he teaches code through a combination of visual communication, teamwork, and project-oriented learning.
-
-You can email him at lee.ngo@galvanize.com for any further questions.
